@@ -35,6 +35,7 @@ public class Player : MonoBehaviour {
         }
         else if (other.gameObject.tag == "GameOver")
         {
+            
             Debug.Log("Game Over");
             animator.SetBool("Dead", true);
             GameOverUI.SetActive(true);
